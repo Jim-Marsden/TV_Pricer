@@ -18,7 +18,7 @@ if(NOT nana_POPULATED)
     add_subdirectory(${nana_SOURCE_DIR} ${nana_BINARY_DIR})
 endif()
 
-add_executable(tv_pricer main.cpp)
+add_executable(tv_pricer main.cpp calculations.cpp calculations.h gui_helper.cpp gui_helper.h)
 
 target_link_libraries(tv_pricer
         nana
